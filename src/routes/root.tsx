@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { TiShoppingCart } from "react-icons/ti";
 
 import { getProducts } from '../api/products';
@@ -26,10 +26,6 @@ const Root = () => {
     const addProduct = (product: Product) => {
         setProduct((p) => [...p, product]);
         setTotal(t => t + Number(product.price));
-    }
-
-    const removeProduct = () => {
-
     }
 
     const openCloseMenu = () => {
