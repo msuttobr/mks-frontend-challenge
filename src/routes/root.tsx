@@ -32,6 +32,10 @@ const Root = () => {
         setOpenMenu((p) => !p);
     }
 
+    const checkout = () => {
+        alert("Comprando " + product.length + " produtos");
+    }
+
     return (
         <>
             <Header>
@@ -74,7 +78,7 @@ const Root = () => {
                                 <div className="text">Total:</div>
                                 <div className="value">R${total}</div>
                             </div>
-                            <button className="end-shopping click">Finalizar Compra</button>
+                            <button className="end-shopping click" onClick={checkout}>Finalizar Compra</button>
                         </div>
                     </div>
                 </div>
