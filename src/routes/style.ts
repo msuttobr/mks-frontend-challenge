@@ -106,6 +106,21 @@ export const Header = styled.header`
         color: white;
         height: 50px;
     }
+
+
+    .menu-shopping-cart ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    .menu-shopping-cart ::-webkit-scrollbar-track {
+        background-color: hsl(0deg 0% 93.33%);
+    }
+    
+    .menu-shopping-cart ::-webkit-scrollbar-thumb {
+        background-color: hsla(216, 85%, 20%, 1);
+    }
+
+
     .click {
         cursor: pointer;
     }
