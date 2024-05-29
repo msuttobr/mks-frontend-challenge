@@ -132,7 +132,7 @@ export const Main = styled.main`
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 20px;
     }
-
+    
     .product {
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         background-color: hsl(0deg 0% 93.33%);
@@ -183,6 +183,25 @@ export const Main = styled.main`
         color: white;
         background-color: #2d2d2d;
     }
+
+    @media (max-width: 900px) {
+        .products {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .products {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .products {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+    
 `;
 export const Footer = styled.footer`
     background-color: hsl(0deg 0% 93.33%);
