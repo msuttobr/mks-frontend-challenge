@@ -159,6 +159,9 @@ export const Main = styled.main`
         border-style: none;
         border-radius: 0 0 8px 8px;
     }
+    .product .action:hover {
+        background-color: hsla(216, 85%, 20%, 1);
+    }
     .product .content {
         padding: 0 20px;
         display: flex;
